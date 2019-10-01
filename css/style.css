@@ -307,3 +307,7 @@ footer a{
 footer #privacy {
     float:right;
 }
+header .logo a {
+    color: #000000;
+    font-size: 39px;
+}
