@@ -1,94 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+	
 <head>
-    <link rel="stylesheet" href="./css/material.min.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-    <script src="./css/material.min.js"></script>
-    <script src="assets/bmob/dist/Bmob-1.7.1.min.js"></script>
-    <script src="data/Bmob.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=0.5, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
-    <title>远方の客栈</title>
+<meta charset="utf-8">
+<title>小鱼の客栈</title>
+	<link href="css/moban.css" rel="stylesheet" type="text/css">
 </head>
 	
-<!--<body onload=get()>头部-->
+<header class="header">
+	
+  <div class="Weather">
+	
+	<iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tf&skin=pitaya" frameborder="0" width="400" height="24" allowtransparency="true"></iframe>
+	</div>
+	
+</header>
 	
 <body>
-<div class="mdl-layout mdl-js-layout">
-    <header class="mdl-layout__header mdl-layout__header--scroll">
-        <div class="mdl-layout__header-row">
-            <!-- Title -->
-            <span class="mdl-layout-title">小鱼の客栈</span>
-            <!-- Add spacer, to align navigation to the right -->
-            <div class="mdl-layout-spacer"></div>
-            <!-- Navigation -->
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="">主页</a>
-            </nav>
-        </div>
-    </header>
-    <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">导航</span>
-        <nav class="mdl-navigation">
-            <a class="mdl-navigation__link">主页</a>
+	
+	<div class="huan"><img src="images/Bing-logo-2013.png" width="200" height="150" alt=""/></div>
+	
+	<div class="sou">
+     <form action="http://www.bing.com/search" accept-charset="UTF-8"    onSubmit="document.charset=UTF-8" method="get" target="_blank">
+		 <input class="s" size="30" name="q">
+		 <input  class="a" type="submit" value="必应搜索">
+     </form>
+	</div>
 
-        </nav>
-    </div>
-    <main class="mdl-layout__content" id="main_layout" >
-        <div class="page-content" style="margin: 16px" align="center">
-            <div class="mdl-grid" align="center"  id="main_grid">
-            </div>
-        </div>
-    </main>
-    <footer class="mdl-mini-footer">
-        <div class="mdl-mini-footer__left-section">
 
-            <div class="mdl-logo">
-                <img src="assets/imgs/head.png" style="width: 32px;height: 32px" width="90" height="90">
-            </div>
-            <ul class="mdl-mini-footer__link-list">
-                <li><a href="mqqwpa://im/chat?chat_type=wpa&uin=493931445&version=1">联系我</a></li>
-            </ul>
-        </div>
-    </footer>
-</div>
 </body>
 	
 	
+<footer>
+		
+	</footer>
+	
 </html>
-<style>
-    .demo-card-square.mdl-card {
-        width: 360px;
-        height: 320px;
-    }
-
-    .demo-card-square .mdl-card__title.icon1 {
-        color: #fff;
-        background: url('assets/imgs/icon.png') bottom right 15% no-repeat #46B6AC;
-    }
-
-    .demo-card-square .mdl-card__title.icon2 {
-        color: #fff;
-        background: url('assets/imgs/ssr_icon.png') bottom right 15% no-repeat #ffffff;
-    }
-
-    .demo-card-square .mdl-card__title.icon3 {
-        color: #fff;
-        background: url('assets/imgs/sans_icon.jpg') bottom right 15% no-repeat #ffffff;
-    }
-
-    .demo-card-square .mdl-card__title.icon4 {
-        color: #fff;
-        background: url('assets/imgs/icon2.png')
-        bottom
-        right 15%
-        no-repeat #80cbc4;
-    }
-    .demo-card-square .mdl-card__title {
-        color: #fff;
-        background: bottom right 15% no-repeat #46B6AC;
-        background-size: 360px 320px;
-    }
-</style>
